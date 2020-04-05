@@ -37,7 +37,7 @@ const MealsNavigator = createStackNavigator({
     navigationOptions: (navData) => {
       return {
         headerTitle: 'Meal Categories',
-        headerLeft:
+        headerLeft: () =>
 
         <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
           <Item
@@ -46,7 +46,7 @@ const MealsNavigator = createStackNavigator({
             onPress={() => navData.navigation.toggleDrawer()}
           />
         </HeaderButtons>
-        }
+      }
     }
   },
   CategoryMeals: {
